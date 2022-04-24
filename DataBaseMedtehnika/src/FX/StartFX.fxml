@@ -12,7 +12,7 @@
             <VBox id="VBox" stylesheets="/CSS/Start.css" styleClass="main">
                 <children>    
                     <Label layoutX="50" layoutY="50" text="База данных медицинского оборудования" minHeight="50" minWidth="5" fx:id="startLabel" />
-                    <Button layoutX="126" layoutY="120" text="Добро пожаловать" onAction="#buttonAction" fx:id="buttonStart" />
+                    <Button layoutX="126" layoutY="120" text="Добро пожаловать!" onAction="#buttonAction" fx:id="buttonStart" />
                 </children>
             </VBox>
         </center>
