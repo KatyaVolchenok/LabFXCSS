@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="VBox" prefHeight="600.0" prefWidth="800.0" stylesheets="/CSS/Table.css"
+            styleClass="main" xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="controller.TableCont">
+    <children>
+        <TableView fx:id="table">
+            <columns>
+                <TableColumn text="Номер" fx:id="id"/>
+                <TableColumn text="Наименование" fx:id="medname"/>
+                <TableColumn text="Модель" fx:id="model"/>
+                <TableColumn text="Серийный номер" fx:id="sernumber"/>
+                <TableColumn text="Производитель" fx:id="manufact"/>
+                <TableColumn text="Отделение" fx:id="department"/>
+            </columns>
+        </TableView>
+        <FlowPane>
+        <children>
+            <Button text="Добавить"  onAction="#buttonActionNote" fx:id="note" />
+            <Button text="Обновить"  onAction="#buttonActionUpdate" fx:id="updateTable" />
+            <Button text="Выход"  onAction="#buttonOut" fx:id="buttonOut" />
+        </children>
+        </FlowPane>    
+    </children>
+</VBox>
